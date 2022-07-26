@@ -10,16 +10,16 @@ namespace SQLConncetionADO
 {
     public class SQLConncetion
     {
+        
         public void Conncetion()
         {
             string cs = "Data Source=DESKTOP-C3BQOGP\\SQLEXPRESS;Initial Catalog=SQLConnction;Integrated Security = true;";
             SqlConnection con = new SqlConnection(cs);
             con.Open();
-            if (con.State == ConnectionState)
-            {
-                //if (con.State == ConnectionState.Open)
-                // {
-                Console.WriteLine("SConnection hasn't beem successfull:");
+            if (con.State == ConnectionState.Open)
+             {
+                Console.WriteLine("SQL Connection has beem successfull:");
+                Console.WriteLine("''''''''''''''''''''''''''''''''''''");
                 Console.WriteLine("SqlConnection Information:");
                 Console.WriteLine("  Connection State = " + con.State);
                 Console.WriteLine("  Connection String = " + con.ConnectionString);
@@ -29,14 +29,15 @@ namespace SQLConncetionADO
                 Console.WriteLine("  Workstation Id = " + con.WorkstationId);
                 Console.WriteLine("  Timeout = " + con.ConnectionTimeout);
                 Console.WriteLine("  Packet Size = " + con.PacketSize);
-            }   //}  
+                Console.ReadLine();
+            }    
                 else
                 {
                     Console.WriteLine("SqlConnection failed to open.");
                     Console.WriteLine("  Connection State = " + con.State);
-                }
-           
-               con.Close();
-        }
+                 
+            }
+                con.Close();
+        }        
     }
 }
