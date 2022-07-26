@@ -15,8 +15,11 @@ namespace SQLConncetionADO
         {
             string cs = "Data Source=DESKTOP-C3BQOGP\\SQLEXPRESS;Initial Catalog=SQLConnction;Integrated Security = true;";
             SqlConnection con = new SqlConnection(cs);
+            string query = string.Format("INSERT INTO PayRoll VALUES(32,'Satish','Mehta','2021-12-31','Busniness Analyst','9852267616','awsthi369@gmail.com','BTM Layout 5st stage','Karanataka','bangalore','M',15000,22000);");
+            SqlCommand cmd = new SqlCommand(query, con);
             con.Open();
-            Console.WriteLine("open");
+           int n = cmd.ExecuteNonQuery();
+            Console.WriteLine("{0} row inserted successfully!",n);
             Console.ReadLine();
             con.Close();
             
