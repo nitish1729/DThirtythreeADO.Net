@@ -7,5 +7,8 @@
 //Console.WriteLine(ADO);
 //Console.ReadLine();
 
-SQLConncetion connect = new SQLConncetion();
-connect.Conncetion();
+//SQLConncetion connect = new SQLConncetion();
+//connect.Conncetion();
+
+SqlconnectionCheck comma = new SqlconnectionCheck();
+comma.Conncetion1();
