@@ -3,7 +3,7 @@
 Console.WriteLine("Hello, World!");
 Console.WriteLine("Wellcome to ADO.Net");
 
-string ADO = "ADO.NET is made of a set of classes that are used for connecting to a database, providing access to relational data, XML, and application data, and retrieving results. ADO.NET data providers contain classes that represent the provider's Connection, Command, DataAdapter and DataReader objects (among others).";
+string ADO = "ADO.NET  is bridge bewteen the frontEnd controls &  and the back end databasre.";
 Console.WriteLine(ADO);
 //Console.ReadLine();
 
