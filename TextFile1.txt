@@ -1,0 +1,25 @@
+﻿string query = string.Format("Select * From PayRoll");
+            SqlCommand add = new SqlCommand(query, con);
+            con.Open();
+
+
+            INSERT INTO PayRoll VALUES(32,'Satish','Mehta','2021-12-31','Busniness Analyst','9852267616','awsthi369@gmail.com','BTM Layout 5st stage','Karanataka','bangalore','M',15000,22000);
+
+             EmpID int,
+	FirstName varchar(255),
+	LastName varchar(255),
+	JoiningDate Date,
+	Department varchar(200),
+	phoneNo varchar(20),
+	EmailID varchar(250),
+	Address varchar(255),
+	State varchar (150),
+	City varchar (150),
+	Gender char(1),
+	BasicPay float,
+	Salary float,
+
+	({0},'{1}','{1}','{2}','{3}')
+
+	"INSERT INTO PayRoll VALUES ({0},'{1}','{2}','{3}',{4})",EmpID,FirstName,LastName,Salary);
+		
