@@ -6,7 +6,7 @@
             INSERT INTO PayRoll VALUES(32,'Satish','Mehta','2021-12-31','Busniness Analyst','9852267616','awsthi369@gmail.com','BTM Layout 5st stage','Karanataka','bangalore','M',15000,22000);
 
              EmpID int,
-	FirstName varchar(255),
+	FirstName varchar(255), 
 	LastName varchar(255),
 	JoiningDate Date,
 	Department varchar(200),
@@ -18,8 +18,14 @@
 	Gender char(1),
 	BasicPay float,
 	Salary float,
-
+	Console.WriteLine("EmpID FirstName LastName,JoiningDate,Department,phoneNo,EmailID,Address ");
 	({0},'{1}','{1}','{2}','{3}')
 
 	"INSERT INTO PayRoll VALUES ({0},'{1}','{2}','{3}',{4})",EmpID,FirstName,LastName,Salary);
-		
+		Console.WriteLine("{0} {1}", reader["EmpID"],reader["FirstName"],
+                        reader["LastName"], reader["JoiningDate"],
+                        reader["[Department"], reader["phoneNo"], reader["EmailID"], 
+                        reader["Address"], reader["State"], reader["City"], reader["Gender"],
+                        reader["BasicPay"], reader["Salary"]);
+
+						Console.WriteLine((reader["EmpID"],reader["FirstName"],reader["LastName"], reader["JoiningDate"],reader["Department"], reader["phoneNo"], reader["EmailID"],reader["Address"], reader["State"], reader["City"], reader["Gender"],reader["BasicPay"], reader["Salary"]));

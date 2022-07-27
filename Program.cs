@@ -10,5 +10,8 @@
 //SQLConncetion connect = new SQLConncetion();
 //connect.Conncetion();
 
-SqlconnectionCheck comma = new SqlconnectionCheck();
-comma.Conncetion1();
+//SqlconnectionCheck comma = new SqlconnectionCheck();
+//comma.Conncetion1();
+
+RetriveDataFromDatabasecs data = new RetriveDataFromDatabasecs();
+data.RetriveData();
